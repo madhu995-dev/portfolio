@@ -1,6 +1,13 @@
-/* ============================================
-   MADHU GADDAM — PORTFOLIO SCRIPTS
-   ============================================ */
+// ==================== PRELOADER LOGIC ====================
+document.body.style.overflow = 'hidden';
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        preloader.classList.add('fade-out');
+        document.body.style.overflow = '';
+    }, 1500);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
